@@ -11,11 +11,11 @@ BASE           =$(notdir $(EXAMPLE))
 MODELFILE     ?=$(WD)/$(BASE:.c:.model)
 
 
-Z3PATH        ?=${PWD}/../tools/z3
-SMACKPATH     ?=${PWD}/../tools/smack
-BAMPATH       ?=${PWD}/../tools/bam-bam-boogieman
-BOOGIEPATH    ?=${PWD}/../tools/boogie
-CORRALPATH    ?=${PWD}/../tools/corral
+Z3PATH        ?=/home/vagrant/verifying-constant-time/tools/z3
+SMACKPATH     ?=/home/vagrant/verifying-constant-time/tools/smack
+BAMPATH       ?=/home/vagrant/verifying-constant-time/tools/bam-bam-boogieman
+BOOGIEPATH    ?=/home/vagrant/verifying-constant-time/tools/boogie
+CORRALPATH    ?=/home/vagrant/verifying-constant-time/tools/corral
 
 VERIFIER      ?=boogie
 

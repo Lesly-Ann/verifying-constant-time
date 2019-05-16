@@ -1,2 +1,4 @@
 examples/sodium/libsodium/build
 tools/corral
+.vagrant
+**/*.bpl
