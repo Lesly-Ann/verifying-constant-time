@@ -60,7 +60,8 @@ FRONTFLAGS    ?=-t $(SMACKFLAGS) --unroll $(UNROLL) --loop-limit $(LOOPLIMIT)
 BACKFLAGS     ?=$(SMACKFLAGS) --unroll $(UNROLL) --loop-limit $(LOOPLIMIT)
 
 ## Additional flags
-SMACKOPTS     ?=
+#SMACKOPTS     ?=
+SMACKOPTS     ?=--clang-options="-O3 -m32 -march=i386"
 
 # Main verification target for examples
 all: verify
