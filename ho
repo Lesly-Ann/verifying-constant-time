@@ -1,0 +1,1092 @@
+[33mcommit 966cbd41c5a8903f41418883f51cd67e6a170bab[m
+Author: Lesly-Ann Daniel <lesly-ann.daniel@cea.fr>
+Date:   Tue Nov 12 17:17:52 2019 -0800
+
+    Added flags for i386 architecture
+
+[33mcommit ca3bc0493cf7a6b814c68325832176b706470b44[m
+Author: Lesly-Ann Daniel <lesly-ann.daniel@cea.fr>
+Date:   Thu May 16 11:44:53 2019 +0200
+
+    Modified the Makefiles so it works
+
+[33mcommit 36e166781b0aa7398c12b335c7a4cd118b73568e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Nov 26 17:49:15 2015 +0100
+
+    Initial Vagrantfile and provisioning script.
+    
+    Shamelessly copied over from Smack.
+    Currently, this only initializes, updates and builds the tools
+    in the local copy (rather than making a system install).
+    The provisioning should add environment initialization to the login scripts.
+
+[33mcommit a893cd3271033cd8da8ed905b1547dc5cab367c3[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Sat Nov 21 00:12:32 2015 +0100
+
+    Added README.
+
+[33mcommit 3fb9c9198fb2bbbe130d9085510641a374425a52[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Nov 20 23:31:01 2015 +0100
+
+    Finally some declassification that works.
+    
+    Brain finally kicked in and decided to look at the assertion failure...
+
+[33mcommit 0f62a323bf481c727a7a07fe4a24ec43e516cf1f[m
+Merge: e4ccdac 12fbd79
+Author: mbb <mbb@di.uminho.pt>
+Date:   Fri Nov 20 21:20:32 2015 +0000
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit e4ccdac01aa68deb5a44eca2acf0f26dbc93691a[m
+Merge: 7de9e77 12fbd79
+Author: mbb <mbb@di.uminho.pt>
+Date:   Fri Nov 20 21:20:23 2015 +0000
+
+    fixed conflict
+
+[33mcommit 12fbd799dd4758c54fea070e41954d23ee40b6da[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Nov 20 21:53:36 2015 +0100
+
+    Declassification.
+    
+    Very small example to quickly check it still works before submission.
+
+[33mcommit 7de9e778394b9d8c22a789e6c93513824585eb14[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Nov 20 20:14:24 2015 +0100
+
+    Rverting to a public commit of libftfp.
+
+[33mcommit 452e325a7c40a9fe1aef3cdaf5a4eab816afb102[m
+Merge: f13f135 01a3975
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Fri Nov 20 19:22:33 2015 +0100
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit 01a3975ce6fa4d0c778bfaef0493f586eb6fd380[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Nov 20 19:19:21 2015 +0100
+
+    More text. Better preparing for a discussion of practical DSA failures.
+
+[33mcommit f13f135f72c9822214ec42540847527d1e5f4bb6[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Nov 20 11:56:57 2015 +0100
+
+    Example Makefiles.
+
+[33mcommit 643334390b0c0053c460dc2330c57dabdd31512d[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Nov 19 22:35:27 2015 +0100
+
+    FTFP: fix makefile.
+
+[33mcommit 706de34c7ce14857ac40d99476b3f0d3b0c560b4[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Nov 19 10:40:35 2015 +0100
+
+    Update BAM.
+
+[33mcommit bf09d68d04a5bed3b8f18ed2f0f3307eb7d6e1c3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Nov 19 10:39:11 2015 +0100
+
+    Update smack -- 'Fix' Makefile for inlining.
+
+[33mcommit 2736e8cacaa0b2d0e4b6ffe641b20688efbc835e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 18 18:22:07 2015 +0100
+
+    libsodium -- Towards some interesting results.
+    
+    Failures in SHA512, Poly1305 (and AEAD) are due to the zeroing function confusing DSA. Some simple rewriting may be in order.
+
+[33mcommit 10d8107a31073f6bf4906cdff16dbfd945b0b89b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 18 18:20:15 2015 +0100
+
+    PolarSSL example update.
+
+[33mcommit 23b4efa93e0a5248a6db6653f0c990d163cf78db[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 18 13:02:52 2015 +0100
+
+    Update BAM and Smack. Donna and MEE-CBC fully automated.
+
+[33mcommit 927e3d09b9c3b786f40974f8591dc47a3033da5f[m
+Author: mbb <mbb@di.uminho.pt>
+Date:   Wed Nov 18 11:45:49 2015 +0000
+
+    some references in intro
+
+[33mcommit 1ee7e35513990aee895d6c761dfadb78600989ae[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 18:23:24 2015 +0100
+
+    Update BAM. Now too many invariants.
+
+[33mcommit 4affd694fac9d4540b1561b5024164588c8c2eac[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 18:22:30 2015 +0100
+
+    Forgotten old annotation in Donna
+
+[33mcommit 2992e0fe64b3ad9b8c0d28355665343783bb6f5a[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 16:21:33 2015 +0100
+
+    Donna: debugging.
+
+[33mcommit 8d04a54a3f0e9ef93935b48aa907b87d8ac2613b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 16:21:07 2015 +0100
+
+    MEE-CBC: updated annotations and debugging.
+
+[33mcommit 4e67e5145073c1499db2a6ebf1ed46f8677e51cf[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 14:42:23 2015 +0100
+
+    OpenSSL: Removing intermediate annotations.
+    
+    verify-verify3 work. verify4 causes a parse error in BAM
+
+[33mcommit 2beaf1bb9cc392ff4a5c7361a449c9f5f0fe0de0[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 14:35:33 2015 +0100
+
+    Forgotten changes in ftfp Makefile.
+
+[33mcommit 832de038183b7ffc7b826b54fa976158ff7ad7e6[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 14:28:33 2015 +0100
+
+    OpenSSL: Updating annotations. Losing obsolete .bpl files
+
+[33mcommit a29a0ed2e1129a3cc27c852d24ef7321214f8839[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 14:17:31 2015 +0100
+
+    Reverting to smack before disabling of inlining.
+
+[33mcommit cb7c4b6dc9dcf5118bf49c8aa73e456b9b25a0c5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 14:16:21 2015 +0100
+
+    All ftfp examples go through without issues...
+    
+    ... except the one that shouldn't (fix_pow).
+    
+    https://github.com/fdupress/libfixedtimefixedpoint master
+    contains a patch that makes fixfrac (and fix_pow) constant-time.
+
+[33mcommit 968bab46d22dbf0a59afda2fa80c42ca3c2354f7[m
+Merge: 9871b6d b4035cf
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 11:05:51 2015 +0100
+
+    Merge commit 'b4035cf30e789dc4d16952a97f1e0b02852ca706' as 'cryptobib'
+
+[33mcommit b4035cf30e789dc4d16952a97f1e0b02852ca706[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 11:05:51 2015 +0100
+
+    Squashed 'cryptobib/' content from commit 6c26f35
+    
+    git-subtree-dir: cryptobib
+    git-subtree-split: 6c26f356c7ee734eb81061f513688736d5970831
+
+[33mcommit 9871b6d76542b188b6abc8f9e0bcfadd5bcededa[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 16 10:18:24 2015 +0100
+
+    Updating toolchain. More annotations updated.
+
+[33mcommit ca689b0627a7e191c1c65b30130f86ac7d8a9885[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 11 16:41:43 2015 +0100
+
+    Update BAM -- Fixed invariant generation
+
+[33mcommit 8eece0d543305d3979f8230162e4d8010912c397[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 11 11:32:28 2015 +0100
+
+    Update tools (invariant gen) - update some annotations.
+
+[33mcommit b884971350470274097504b197c3788fc3ad17e9[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Nov 4 16:35:11 2015 +0100
+
+    Updating tools, ct-verif header and sort example annotations.
+    
+    Failure in CT annotation analysis.
+
+[33mcommit 883a5611aa1f964d7c20288dfa864e56a89c7108[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Nov 3 22:24:39 2015 +0100
+
+    Updated annotation API.
+    + And updated usage on ssl3_cbc_remove_padding_wrapper_error.
+
+[33mcommit 305cd893750809837afc8d4fdfaa1ce1f56db20e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 2 16:50:23 2015 +0100
+
+    Hacking some auto-detection of BAM path.
+
+[33mcommit f27e2cbddf0b8ad3fbe982bac7c61bccf4b62472[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 2 16:14:11 2015 +0100
+
+    Update smack.
+
+[33mcommit 4ca4dc9d19b3ec2c2afcb63809fb731f626351a7[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Nov 2 15:54:42 2015 +0100
+
+    Makefile: give priority to system tools (except for BAM, not figured out yet).
+
+[33mcommit 23dc5aa165f33b7015e1e95e70c55b3ed9acd36f[m
+Author: mbb <mbb@di.uminho.pt>
+Date:   Wed Oct 28 16:42:29 2015 +0000
+
+    invariant annotations in openssl
+
+[33mcommit f01f2659237deac30959c22a3fa591b17c994fda[m
+Author: mbb <mbb@di.uminho.pt>
+Date:   Wed Oct 28 16:23:59 2015 +0000
+
+    All the bpls
+
+[33mcommit 9a43d7687853fa33a3f5db94b35f681368eb7576[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 27 19:58:43 2015 +0100
+
+    Decision
+
+[33mcommit aad6553f3680f6445dc8a8a3bfa4761784f8e6a5[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 18:34:22 2015 +0100
+
+    qhasm code
+
+[33mcommit 1823e266875b0f724524f2b22ac85e1c9976d59f[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 18:32:42 2015 +0100
+
+    a qhasm example: AES
+
+[33mcommit bee7fa47575e373bbce785c799e897d18cbb4b3f[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 18:31:12 2015 +0100
+
+    a qhasm example: AES
+
+[33mcommit 44af43df3c7fbd5c33ee63dfb23f5f0b7f696383[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 18:12:17 2015 +0100
+
+    Cleaning up openssl examples
+
+[33mcommit ee1e376512a1284b1be2e33d5829d441fcaf8b73[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 17:46:53 2015 +0100
+
+    A big openssl example
+
+[33mcommit 3b8876f18981502c9d4f36a16a793fecdd3eef78[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Wed Oct 21 10:23:20 2015 +0100
+
+    ssl examples with loop invariants
+
+[33mcommit 060f48d357663f653a63d6e3c44faa904773a588[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Tue Oct 20 15:20:11 2015 +0100
+
+    the bug
+
+[33mcommit 79afc1df23d3ecd74ae319bc74bb44ccb2f2d202[m
+Merge: 1ff9ca8 ccfe3e1
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Mon Oct 19 12:23:03 2015 +0100
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit 1ff9ca8662bfe3b6ffce47c96caef4775d5ffdc9[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Mon Oct 19 12:22:53 2015 +0100
+
+    working on the openssl example
+
+[33mcommit ccfe3e12a3ce783493ac5d08d1e126133476f90c[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Oct 19 10:45:36 2015 +0200
+
+    Update smack.
+
+[33mcommit 6b2cb4480a61619f93d4e73db859537bf9c53515[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Sun Oct 18 15:02:52 2015 +0100
+
+    first rudimentary openssl examples
+
+[33mcommit 322747f697aa72d2e157d5de293ae801cc0d52d3[m
+Author: Manuel Barbosa <mbbarbosa@gmail.com>
+Date:   Sun Oct 18 15:02:27 2015 +0100
+
+    first rudimentary openssl examples
+
+[33mcommit 463d07abd172f5fef7ba6cb71a0afba44d74812f[m
+Author: gb <gilles.barthe@imdea.org>
+Date:   Thu Oct 15 00:28:06 2015 +0200
+
+     tweaks on outline
+
+[33mcommit d36d459ef2640b0b86ea0219461b8289a60f4008[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 14 19:56:23 2015 +0200
+
+    Changing Makefile to only support unbounded verification.
+    
+    Will fail everywhere due to lack of invariant generation.
+
+[33mcommit da5b4a29b9273019a47c28906d7ba9b49c3e5fa0[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 13 17:35:10 2015 +0200
+
+    New skeleton with useful submission info.
+    
+    Comments welcome.
+
+[33mcommit ef5d85fb96014f9a47eebabcacc3187a12756287[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 9 12:49:11 2015 +0200
+
+    Refined annotations and extended product for MEE-CBC
+
+[33mcommit 88c213d6a239f1db46e67047445a4f503d117204[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 9 11:39:57 2015 +0200
+
+    A simpler declassification example... hopefully
+
+[33mcommit 1f7304a744a041d3ef634788347122766a24ce23[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 9 11:08:58 2015 +0200
+
+    astyling pkcs code...
+
+[33mcommit 381d008f26faf147a29cc984d3f782d9920ac09e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 18:52:40 2015 +0200
+
+    PKCS: A first attempt at an extended product program.
+    
+    I am very much not certain that the construction is correct, but the CFG, looks ok, at least.
+
+[33mcommit 2e3f8c7509767c4bf0a5d75a7352e3bf3a35a0c2[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 14:56:32 2015 +0200
+
+    Updating mbedtls.
+    
+    Running the tests should be done by using my fork:
+    https://github.com/fdupress/mbedtls
+
+[33mcommit 26cd198862cbbd5e404d8edf899bd23ec6222393[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 14:36:56 2015 +0200
+
+    Redo annotated product program for Gaussian sampling.
+
+[33mcommit f86aa9655d53e086bc1777e141071754ddac44f6[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 14:36:33 2015 +0200
+
+    Entry point for Gaussian sampling.
+
+[33mcommit 127b8dba00d0efa41c67498141407230f71d928b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 14:24:02 2015 +0200
+
+    Annotated MEE-CBC product program.
+
+[33mcommit b90e21ad32180264c0721d661359ca6eae4f938b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 14:23:33 2015 +0200
+
+    Raw MEE-CBC product program.
+
+[33mcommit 2f3f859676ab7fb2b4393198b4ac7b1c813a058f[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 12:43:55 2015 +0200
+
+    MEE-CBC: Ciphertext length is public. remove declassification.
+
+[33mcommit 02604a6c5a7244d420a119fc2914b151bacb1dac[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Oct 7 12:42:03 2015 +0200
+
+    Minor style.
+
+[33mcommit 1f2b952bd1c5ca07b709bcd15bc579b0d59feebf[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 6 15:59:29 2015 +0200
+
+    Annotated .bpl for RLWE sampling.
+
+[33mcommit befebe417428ed7da1773d29573594ca1b6f372e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 6 15:58:57 2015 +0200
+
+    RLWE: constant-time sampling Makefile and raw product program.
+
+[33mcommit d54d1f07fad012ebab73f669f0472ea7984c3ca5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 6 14:46:13 2015 +0200
+
+    Upgrade smack.
+
+[33mcommit 0fb3cda274c58f57993cb104a6e4feea0f0e91f1[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Oct 6 11:58:13 2015 +0200
+
+    Invariants for fix_exp and fix_sqrt.
+
+[33mcommit ab05d15ee4207302e1bfa98922bf2a0a76e9ef50[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Oct 5 19:23:20 2015 +0200
+
+    Annotations for trig functions.
+
+[33mcommit f3d98b380c1b240e2cca4180f060e723f612eec9[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Oct 5 18:51:36 2015 +0200
+
+    Raw .bpl for FTFP examples that need annotations.
+
+[33mcommit ef5f123dac522edef0ad36521217fef8ef638128[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Oct 5 18:50:31 2015 +0200
+
+    Upgrade smack.
+    
+    FTFP Makefile: better batching, target for pure code generation on
+    difficult problems.
+
+[33mcommit 955f53f331035316b89e1ef722828fe67a9a55c3[m
+Merge: 08408d5 3d95b85
+Author: gb <gilles.barthe@imdea.org>
+Date:   Sat Oct 3 00:16:53 2015 +0200
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit 3d95b852011b9944cdcebc2c56a3aa716965f34f[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 19:08:27 2015 +0200
+
+    Ignore tools/corral while figuring out a better solution than downloading and unzipping an archive...
+
+[33mcommit 141c55fbd07670edfd8265e13197e2f6b13886fd[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 18:55:27 2015 +0200
+
+    ftfp: identifying difficult verification tasks.
+    
+    Not time to figure out why they are difficult.
+
+[33mcommit f13e37259f23c77dfc15577b60f4bda31aae8bb8[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 18:25:27 2015 +0200
+
+    Makefile oopsie.
+
+[33mcommit ae7c10b63a14c8a7c1ca8f60f355e153708f8e11[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 18:10:33 2015 +0200
+
+    Makefile for ftfp - verifies all functions.
+    
+    No intermediate targets because the verification tasks are so trivial
+    I don't expect them to fail, ever.
+
+[33mcommit 4b82568c577a86f009b5e6dcb17d2d41b0a46c20[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 18:09:12 2015 +0200
+
+    Makefile nits: always put auxiliary files in the WD.
+
+[33mcommit d961b4c86084154d63c9d4e232c2f492d62a5117[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 15:23:30 2015 +0200
+
+    gitignore: build subfolder in libsodium.
+
+[33mcommit c9b5c6f02bf5c794bd8f72349059c74db40e8dc3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 15:19:13 2015 +0200
+
+    Nit in donna Makefile.
+
+[33mcommit 432c41585df4373eeea47458e80bcb6ea254f3c5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Oct 2 15:18:17 2015 +0200
+
+    Two new sources of examples: ftfp and rlwe.
+
+[33mcommit 08408d527cd56022ed4fce55238fa8a1acf51ca0[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 30 18:54:15 2015 +0200
+
+    Upgrading smack. Getting bam to a publicly available commit again.
+
+[33mcommit 9e22074eb4545a3a995844a45c377610c7a40e3a[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 30 18:53:52 2015 +0200
+
+    Minor in example Makefiles.
+
+[33mcommit be4a8b83c5bf2c70a5da49029673750aac60a67b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 30 15:36:38 2015 +0200
+
+    More Makefile nits.
+
+[33mcommit f38811f79e566d930a43352d1513d6ac0f7402da[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 30 11:01:30 2015 +0200
+
+    Upgrading smack
+
+[33mcommit 03bd3a20835de5a434f9cbf9a7ab8e4f108312eb[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 29 20:56:42 2015 +0200
+
+    Nit in Makefile: support for multiple entries in a single file.
+
+[33mcommit 4d126ef6c08c0b4fd8a7e55124aa1b31462d0326[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 29 19:30:06 2015 +0200
+
+    Makefiles throughout. Reannotating libsodium wrappers.
+
+[33mcommit c354acf6bf6ea29f70f2534ac37a04f06f3438f1[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 28 17:29:52 2015 +0200
+
+    General Makefile: use local copy of bam (no install)
+
+[33mcommit 0e7f6c3a754597a6b4f5964dd3bce4e6fb09789f[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 28 16:58:56 2015 +0200
+
+    Upgrading bam to HEAD of the correct repository.
+
+[33mcommit e0623b51847da7b5dcd2fdbc0c7edd1f8c44edf5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 28 12:21:59 2015 +0200
+
+    Upgrading toolchain.
+
+[33mcommit 826cec8dc7b5521416fc4cb8cfbd396c4026104b[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Sep 25 15:56:20 2015 +0200
+
+    Makefiles.
+
+[33mcommit 3b632e81ad62d63df1ed929ea7ad6b86ecfaff38[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 24 20:37:06 2015 +0200
+
+    Fix split targets.
+
+[33mcommit 25d6ac7a48eceba4319a7a646c260f343cb306d8[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 24 19:17:52 2015 +0200
+
+    Splitting the verification target up.
+
+[33mcommit b418e640bf016bc7fde644b145110f42bc627987[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 24 18:07:20 2015 +0200
+
+    More Makefile fiddling.
+    
+    corral failing on some examples, but not other, similar ones.
+
+[33mcommit e04c489fa9fb77bea7aa160aa42dca11b740f03d[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 24 17:52:10 2015 +0200
+
+    Updating smack - switching Makefiles to using Corral.
+
+[33mcommit 438028d227091399424509e5fa233ec108742e98[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 24 10:53:40 2015 +0200
+
+    PKCS example: allow parameter override.
+
+[33mcommit 857599dad6b0c7a97e1de5df7e3ab179f6afb245[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 23 12:31:06 2015 +0200
+
+    Update smack and bam
+
+[33mcommit db079c9338e85de2faa550c5b748b101280f02c5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 21 10:48:30 2015 +0200
+
+    Updating BAM.
+
+[33mcommit 6448998c1792ad7a020cbbb08e1b63ad721bf2e3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Sep 18 20:26:33 2015 +0200
+
+    Progress on sha256 - finish is required to make verification fail
+
+[33mcommit 583827f39e9019ebe71b775710012fe2eac20cdc[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Sep 18 13:57:48 2015 +0200
+
+    Some details in Makefiles and polarssl-based examples
+
+[33mcommit afcb6d60bf4f466aa2dbbb2005d416fa61e795d5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 17 14:28:54 2015 +0200
+
+    Minor stuff in random files.
+    
+    - Letting the donna Makefile read the unroll parameter from environment.
+    - Some cleanup in a mee-cbc comment.
+
+[33mcommit 4a55db7e54678b109399409c2dcd529dbb1739b8[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 17 14:27:50 2015 +0200
+
+    Additional annotation dummies for compilation.
+
+[33mcommit b5bdacf5f5632036c4af9d8aa8ff52df078ca049[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 17 14:27:32 2015 +0200
+
+    Annotations and Makefile for OAEP.
+
+[33mcommit 1fef8215b56211d0ac12f2e8577db5cea1c6664c[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 17 14:26:35 2015 +0200
+
+    Annotations and Makefile for polarssl-based examples.
+
+[33mcommit 55b7d46700481c404bb9499f21098338c19393e0[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 16 18:30:17 2015 +0200
+
+    Makefile and annotations for mee-cbc.
+    
+    Errors need investigated.
+
+[33mcommit a22377d208b3dbcc4f85e9318dc4633adfa8b9cd[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 16 16:32:45 2015 +0200
+
+    Updating smack.
+
+[33mcommit 0934ee98b159101f3ccb6c8da461dac6535333c3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 16 16:32:33 2015 +0200
+
+    local Makefiles for examples, more examples go through
+
+[33mcommit edb3eac7c41d415a75de8bbb0e5f8cf19a5070c3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 20:12:35 2015 +0200
+
+    Including <smack.h> when verifying.
+    
+    This does not work as well as I was led to believe... Still investigating.
+
+[33mcommit 0ac4963311939767960318bc0f048dbc9f0cff97[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 17:22:49 2015 +0200
+
+    Adding remake-bam goal until I can figure out how to use it locally.
+
+[33mcommit c3e971484690343a8ad6e67069ae9f380ff97d74[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 16:33:50 2015 +0200
+
+    Sort example: some failing annotations.
+
+[33mcommit ce64e681c84367bab362cee8212ebc435aefa2b3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 16:33:26 2015 +0200
+
+    Updating bam.
+
+[33mcommit 9b2d02cc543626cd0b001880945ea1d4ce48efd9[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 14:58:46 2015 +0200
+
+    Fix clean-bam goal.
+
+[33mcommit 90e6284d6db5551c7cddcbcac17a774246667c0e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 15 13:36:14 2015 +0200
+
+    Makefile for local tool setup.
+
+[33mcommit 89f7bbdf1a21df98cbc8bb39ae62e816a623f6e5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 14 17:31:57 2015 +0200
+
+    Removing return value annotations from sort examples to get them through.
+
+[33mcommit 561d0adce277cc5fa60fe8b7a19d1f2aca983c11[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 14 17:22:41 2015 +0200
+
+    Makefile progression towards Donna.
+    
+    - Update Smack to accept non-main entry points;
+    - Modify verify.rb script to support multi-file compilation;
+    - Modify verify.rb script to support BVD model production;
+    - Fix annotations in donna wrapper.
+
+[33mcommit 3dbac330d04fdbe6a787d4d70a1a979f0a8e7bd6[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 14 14:47:25 2015 +0200
+
+    Attempting to get some experimental results.
+
+[33mcommit 03865ad62a79be614928c6d4baa26f7151ffb786[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Sep 14 12:37:04 2015 +0200
+
+    Bringing smack submodule up to date.
+
+[33mcommit 086917581c9fc0443b3f664bd74751efc718bbe5[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 8 21:19:06 2015 +0200
+
+    Updating submodules.
+    
+    (Getting a runtime error at the moment.)
+
+[33mcommit 43ea56a6afe4ae8cb90927aab2e23e44795440f8[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Sep 8 17:44:44 2015 +0200
+
+    Updated negative sort examples.
+
+[33mcommit 752d3d88e87811d08e0f990afa6f63db031ff962[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Sep 8 16:24:56 2015 +0200
+
+    Updated annotation language.
+
+[33mcommit 52168832134703146b97cf62ac18468ab0402112[m
+Merge: 5ed0670 34d73cc
+Author: mbb <mbb@di.uminho.pt>
+Date:   Fri Sep 4 19:26:31 2015 +0100
+
+    Forcing my changes
+
+[33mcommit 34d73ccf6114a9796b5ad364c03cef30057985d5[m
+Merge: d045a25 5ed0670
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Fri Sep 4 18:14:07 2015 +0200
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit d045a25bbdf87d9d6eea7942afb44dee2ad3944f[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Fri Sep 4 18:13:55 2015 +0200
+
+    Disjoint region predicate.
+
+[33mcommit 5ed0670415e859ff747eff39078e63d7e5ed0e8a[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Sep 4 14:31:04 2015 +0200
+
+    Annotation for disjoint regions.
+
+[33mcommit 41c309d860c1521940c2dd201a21198230edd120[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Fri Sep 4 11:36:50 2015 +0200
+
+    Smack and BAM submodules.
+    
+    Still have to work out makefiles for those of us who are not good with computer.
+
+[33mcommit 33fadebd4454318e85226f12199622082b13e707[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Thu Sep 3 18:10:24 2015 +0200
+
+    Convenient verification script.
+
+[33mcommit dab80b6f6ec74e47074b5f83615dd2a9977fca19[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Sep 3 15:07:15 2015 +0200
+
+    Adding secure-time PKCS example from CCS'13.
+
+[33mcommit 22c57812c7549fe5b467cb95836fa852b9e30998[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Sep 2 18:38:06 2015 +0200
+
+    Variants of sort.
+    
+    A negative example, and a multiplexing-based, purely constant-time, version.
+
+[33mcommit b7f37821f5e7c5c06aa07e3e56ad0a14bf9c27ca[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 1 19:00:05 2015 +0200
+
+    constant-time MEE-CBC with annotated entry point.
+    
+    This is also a good immediate target.
+
+[33mcommit 5e76aeb80b9522e0138f38c341c372e85c2b1484[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 1 17:41:44 2015 +0200
+
+    Partially revert "Documenting the S2N attack"
+    
+    Undoing the accidental removal of one of the submodules.
+    
+    This reverts commit 11f369c7fac8f0de650b85ab07e79c19dbfe71d6.
+
+[33mcommit 70d77f4e70d409c97841e7c15ca7ce73a901e06e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 1 17:30:23 2015 +0200
+
+    PolarSSL submodule + entry points for triple DES and SHA256.
+
+[33mcommit 4efda5c6679256be2fbda273e384324c05a334e7[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 1 17:03:07 2015 +0200
+
+    Adding annotated TEA.
+
+[33mcommit cc5a5f15b301bf496dc8b44d62829bf36e3083eb[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Sep 1 16:48:53 2015 +0200
+
+    Fixing examples after annotation syntax change.
+
+[33mcommit 54c9cdadf6263cc00fd8d7a8acbc93aeccd7f511[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 31 11:01:48 2015 +0200
+
+    Boogie and Z3 as submodules (+ nuget for Boogie compilation).
+
+[33mcommit 4ff0f6718e66f473c4caaa63982d23af680c06d3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 31 10:32:48 2015 +0200
+
+    Old stuff that may help in tests.
+
+[33mcommit de0c73760516408789b0916b3924539a8b75cbfa[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Sep 1 17:25:38 2015 +0200
+
+    Removed redundant {public,declassified}_return annotation.
+
+[33mcommit 0da538606782f375eadd8e6837f8a5b6f7776a87[m
+Merge: d2a9d51 7d0c0e9
+Author: mbb <mbb@di.uminho.pt>
+Date:   Tue Sep 1 15:42:24 2015 +0100
+
+    Merge branch 'master' of ssh://ci.easycrypt.info:422/ct-verif
+
+[33mcommit 7d0c0e9a2fd7f61ce33ac4ec6a3eb0d54ade0f81[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Sep 1 16:17:20 2015 +0200
+
+    Updated annotations.
+
+[33mcommit d2a9d51664291959b2d24a49a5e504b0eae29561[m
+Author: mbb <mbb@di.uminho.pt>
+Date:   Tue Sep 1 15:08:47 2015 +0100
+
+    Documenting the S2N attack
+
+[33mcommit d51426886db02abee8ae03a2c2abffa2a31e8a01[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Fri Aug 28 18:02:04 2015 +0200
+
+    Translated the sort example.
+
+[33mcommit 9305040b16b2a86296438252f1d96f6745c03512[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 16:15:53 2015 +0200
+
+    Making region_of_var 'opaque' to avoid affecting code generation. May not be final.
+
+[33mcommit 90b9dc82353a1fcd45781f04b4782fd0224a5b9c[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 15:46:47 2015 +0200
+
+    Suppressing warnings in annotations. Adding symbol to refer to the address of the return value.
+
+[33mcommit 4054697ab3c95da537403e96615b8391333819d3[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 15:39:53 2015 +0200
+
+    Annotation fix for sort output region.
+
+[33mcommit 8df932115732c6ff25cde3415810b7c3dcbcd730[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 15:39:31 2015 +0200
+
+    Dependencies for donna entry point.
+
+[33mcommit b2dfa1678c1cde1d53eb9ec22b133f6436be82ad[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 14:17:56 2015 +0200
+
+    Figuring out minimal dependencies for sodium/auth.c and its test case.
+
+[33mcommit 4dc2d67a8f2cb45128b6f62ab1c680949921d30f[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 13:57:58 2015 +0200
+
+    Figuring out minimal dependencies for sodium/aead.c and its test case.
+    
+    Some of the dependencies may be due to the test case itself.
+
+[33mcommit ebfac2733cfe8d46df29e810ddf294fee1330531[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Aug 25 13:01:19 2015 +0200
+
+    making sort directly usable as an example.
+
+[33mcommit 31af87b97aa39995046f31001c1b8991a9ecc634[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 24 18:05:21 2015 +0200
+
+    Switching to https cloning for submodules.
+
+[33mcommit d98c7ab2e1ad9b73aad0d9d6aa34bcfb4f275e89[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 24 12:24:01 2015 +0200
+
+    Adding annotated entry point for curve25519-donna.
+
+[33mcommit 793062a8ec2ec5fa5880504001946ec16dc7bbcd[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 24 12:23:25 2015 +0200
+
+    Adding dummy implementations for the annotation functions.
+
+[33mcommit c0ef3f25219a7bf6b7da9dcb5372f421c3490840[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Mon Aug 24 12:22:49 2015 +0200
+
+    Adding Curve25519-donna submodule
+
+[33mcommit 89a8c08c5971fd26b4d711bcaade8f05e7b7abc8[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 12:51:45 2015 +0200
+
+    Whitespace
+
+[33mcommit ede157ae8ddaa1c09ee13ded37ab7bd3db9c5724[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 12:47:08 2015 +0200
+
+    Entry points for HMAC-SHA512.
+    
+    Some thoughts regarding modularity in comments.
+
+[33mcommit afc3f7500247117fcb95385296f61b626bfcc263[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 12:46:24 2015 +0200
+
+    Minor in AEAD: level of direct arguments is not boilerplate.
+
+[33mcommit 33263038e5e465d3ac6874e202f20e70765a2a63[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 12:09:43 2015 +0200
+
+    Examples: adding libsodium, plus annotated entry point for xSalsa20+Poly1305.
+
+[33mcommit 876a5e1287e0b6517340b70cb3a815fc20979477[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 12:08:16 2015 +0200
+
+    Warning suppression in annotation header.
+
+[33mcommit 15fd5c57992a6483aef2eff607c9a9d8333dc1e1[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 11:04:45 2015 +0200
+
+    Minor in s2n wrapper.
+
+[33mcommit 7e2327e777a07024fd16c25f929cfd03f049d3be[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Thu Aug 20 11:04:29 2015 +0200
+
+    Moving old examples into a subfolder for clarity.
+
+[33mcommit 3b8331bd79dd848e0b7da73bff6c198d7a1fba3c[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Aug 19 18:12:09 2015 +0200
+
+    Temporary entry point for MEE-TLS-CBC
+    
+    Compilation requires you to follow the s2n build instructions:
+    https://github.com/awslabs/s2n/blob/master/docs/USAGE-GUIDE.md
+    
+    We will later need to replace the core crypto algorithms with constant-time ones.
+
+[33mcommit d32766e23dc275ae0f2f2d3194675803eed15158[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Aug 19 17:37:36 2015 +0200
+
+    Amazon s2n repo as a submodule - entrypoints are coming up.
+    
+    From the repo root, run:
+      git submodule init
+      git submodule update
+
+[33mcommit 835fb5a5d6c371b5fd73039c1f5cda0eeb939b8e[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Wed Aug 19 14:33:53 2015 +0200
+
+    First example: Manuel's bozo sort.
+    
+    - smack.h describes the annotation language and its rationale.
+
+[33mcommit cbbfdec8127c886fd8177a1318652858e072780e[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Wed Jul 22 18:15:22 2015 +0200
+
+    Updated instrumentations.
+
+[33mcommit 9812685c9081d41c005b7fed63d9491a025e51ca[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Jul 21 20:07:02 2015 +0200
+
+    Added initial translations.
+
+[33mcommit c89a3f6b732047d41915b611fb3d6c39379e458a[m
+Author: Michael Emmi <michael.emmi@gmail.com>
+Date:   Tue Jul 21 19:47:43 2015 +0200
+
+    Added the first examples.
+
+[33mcommit 06f6c4919312cbb0347e05d1c6294f948cc93e38[m
+Author: François Dupressoir <fdupress@gmail.com>
+Date:   Tue Jun 9 16:16:15 2015 +0200
+
+    Master stub.

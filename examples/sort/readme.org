@@ -1,0 +1,49 @@
+* Notes on Undetected Violation in Sort Function
+
+** Which function
+The ~sort~ function in ~ct-verif~ benchmark.
+https://github.com/imdea-software/verifying-constant-time/blob/master/examples/sort/sort.c
+
+** Compilation Options
+I used the compiler provided in the Vagrant environment to make sure
+that it is the same compiler that ~ct-verif~ uses:
+#+BEGIN_EXAMPLE
+vagrant@vagrant-ubuntu-trusty-64:~/verifying-constant-time/examples/sort$ clang --version
+Ubuntu clang version 3.5.2-svn232544-1~exp1 (branches/release_35) (based on LLVM 3.5.2)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+#+END_EXAMPLE
+
+The vulnerability is introduced with these options:
+=clang -O3 -m32 -march=i386 test_sort.c -c=
+
+(You can check in IDA that the code is actually compiled with
+conditional jumps)
+
+** Verification with ct-verif
+Modify the Makefile to add the clang options:
+#+BEGIN_EXAMPLE
+ ## Additional flags
+-SMACKOPTS     ?=
++#SMACKOPTS     ?=
++SMACKOPTS     ?=--clang-options="-O3 -m32 -march=i386"
+#+END_EXAMPLE
+
+=make verify= returns:
+#+BEGIN_EXAMPLE
+Boogie program verifier finished with 1 verified, 0 errors
+#+END_EXAMPLE
+
+** Details
+~ct-verif~ performs its analysis on the Boogie code generated from
+LLVM after optimizations. Let us look at this llvm code.
+
+If I compile ~sort.c~ to ~llvm~ with ~clang~ (=clang -S -O3 -m32
+-march=i386 -emit-llvm test_sort.c=), the resulting llvm code contains
+a =%. = select i1 %4, i32 %1, i32 %3= but no conditional jump.
+
+Also note that the same program compiled without the flag ~march=i386~
+is compiled to constant-time code.
+
+_Conclusion_: the conditional jump is introduced in the backend pass
+of =clang=.
